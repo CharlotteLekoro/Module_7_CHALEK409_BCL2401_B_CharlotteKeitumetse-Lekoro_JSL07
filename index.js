@@ -33,6 +33,14 @@ certificateContent.innerHTML = `
 
 `;
 
+const logo = document.createElement("img");
+logo.src = "./logo.png";
+logo.width = 200;
+
+certificateContent.appendChild(logo);
+const text = document.createElement("p");
+text.textContent = personalMessage;
+certificateContent.appendChild(text);
 
 
     // Display the modal
